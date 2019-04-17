@@ -18,7 +18,6 @@ import hamburgerImage from 'assets/hamburger-menu.svg'
  * @returns header
  * @todo
  */
-
 function Header() {
   const [isMenuOpen, setMenuState] = useState(false)
   const Nav = styled.nav`
@@ -43,10 +42,9 @@ function Header() {
     `}
   `
   const HamburgerIcon = styled.div`
-    //position: absolute;
-    //right: 0;
-    //padding-right: 2.5rem;
-    margin-left: auto;
+    position: absolute;
+    right: 0;
+    padding-right: 3rem;
     ${breakpoint.medium`
       padding-right: 3.5rem;
       `}
@@ -71,7 +69,6 @@ function Header() {
     </header>
   )
 }
-
 /*
               {isMenuOpen ? (
               <Paragraph sm> Des Archives </Paragraph>
@@ -80,3 +77,30 @@ function Header() {
             )}
             */
 export default Header
+
+/*
+const Header = ({ siteTitle }) => (
+  <header
+    style={{
+      alignItems: 'center',
+      //background-color: blue;
+      display: 'flex',
+      padding: '2rem 0',
+      position: 'absolute',
+      width: '100%',
+    }}
+    >
+      <Router>
+    <Wrapper>
+      <Paragraph sm> Des Archives </Paragraph>
+      <HamburgerIcon
+        onClick={() => {
+          setMenuState(!isMenuOpen)
+        }}
+      >
+        <img src={hamburgerImage} alt='hamburger menu' />
+      </HamburgerIcon>
+    </Wrapper>
+  </Router>
+  </header>
+  */
