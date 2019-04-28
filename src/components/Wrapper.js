@@ -1,12 +1,23 @@
-/* Header.js
+/* Wrapper.js
  *
  * @author: Mikal Callahan
  * @version: a-0.0.1
+ *
+ * @returns: Wrapper
  */
 
-// imports
-import React, { useState } from 'react'
-import { BrowserRouter as Router, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import breakpoint from 'styles/breakpoints'
 
-//const Wrapper =
+export default styled.section`
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: ${props => (props.center ? 'center' : 'flex-start')};
+  padding: 0 2.5rem;
+  width: 100%;
+  ${breakpoint.medium`
+    //display: grid;
+      padding: 2.5rem 3.5rem;
+    `}
+`

@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import logo from 'logo.svg'
-import 'app.scss'
 import Header from 'components/Header'
+import Home from 'pages/Home'
+import 'app.scss'
 
-class App extends Component {
-  render() {
-    return (
-      <div className='app'>
-        <Header />
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div className='app'>
+      <Header />
+      <Home />
+    </div>
+  )
 }
 
 export default App

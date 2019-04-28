@@ -1,12 +1,14 @@
-/*
- * Button.js
+/* Button.js
  *
- * @returns button
+ * @author: Mikal Callahan
+ * @version: a-0.0.1
+ *
+ * @returns Button
  */
 
 import styled from 'styled-components'
 
-const Button = styled.button`
+export default styled.button`
   /* Adapt the colors based on primary prop */
   background: ${props => (props.primary ? 'palevioletred' : 'white')};
   background: ${props => (props.none ? 'white' : 'inherit')};
@@ -19,4 +21,4 @@ const Button = styled.button`
   border-radius: 3px;
 `
 
-export default Button
+//export default Button

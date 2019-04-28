@@ -28,6 +28,14 @@ code {
     monospace;
 }
 
+.app {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 /*
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
